@@ -1,0 +1,7 @@
+extends layout.pug
+
+block content
+  h1 Update user
+  form(method='POST' action='/users/' + user + '?_method=PUT')
+    input(type='text', name='user')
+    button(type='submit', value='Envoyer') Envoyer

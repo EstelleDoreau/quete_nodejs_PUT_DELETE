@@ -1,0 +1,7 @@
+extends layout.pug
+
+block content
+  h1 Delete id
+  form(method='POST', action='/users/' + id + '?_method=DELETE')
+    input(type='text', name='id')
+    button(type='submit', value='Envoyer') Envoyer
